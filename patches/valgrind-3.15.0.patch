@@ -1,0 +1,23 @@
+diff -ruN valgrind-3.15.0.orig/Makefile.am valgrind-3.15.0/Makefile.am
+--- valgrind-3.15.0.orig/Makefile.am	2019-04-13 12:56:21.000000000 +0200
++++ valgrind-3.15.0/Makefile.am	2020-01-31 23:01:14.902441708 +0100
+@@ -12,6 +12,7 @@
+ 		massif \
+ 		dhat \
+ 		lackey \
++		deadstores \
+ 		none
+ 
+ EXP_TOOLS = \
+diff -ruN valgrind-3.15.0.orig/configure.ac valgrind-3.15.0/configure.ac
+--- valgrind-3.15.0.orig/configure.ac	2019-04-13 12:56:21.000000000 +0200
++++ valgrind-3.15.0/configure.ac	2020-01-31 23:00:49.766792988 +0100
+@@ -4710,6 +4710,8 @@
+    dhat/tests/Makefile
+    lackey/Makefile
+    lackey/tests/Makefile
++   deadstores/Makefile
++   deadstores/tests/Makefile
+    none/Makefile
+    none/tests/Makefile
+    none/tests/scripts/Makefile
