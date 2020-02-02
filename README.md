@@ -1,5 +1,5 @@
 # deadstores
-A Valgrind tool for finding redundant loads/stores
+A Valgrind tool for finding redundant loads/stores. Documentation is available in the blog post “[Watching for software inefficiencies with Valgrind](https://kristerw.blogspot.com/2020/02/watching-for-software-inefficiencies.html)”.
 
 # How to install
 Install in `$HOME/valgrind` by running the commands
