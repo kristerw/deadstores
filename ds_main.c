@@ -426,7 +426,6 @@ static void mark_invalid(Addr addr, SizeT size)
 
 static void mark_written(Addr addr, SizeT size, handle h)
 {
-  tl_assert(h != 0);
   for (SizeT i = 0; i < size; i++) {
     struct addr_info *ai = addr2addr_info(addr + i);
     ai->store_instr_h = h;
